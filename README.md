@@ -10,7 +10,7 @@
 
 </br>
 
-- set workspace </br>
+- **set workspace** </br>
 `$ git clone https://github.com/JUYEON048/NIRO-SG2-SETTING.git` </br>
 `$ cd niro-sg2-env/src/` </br>
 `$ unzip pointgrey_camera_driver.zip` </br>
@@ -22,20 +22,19 @@
 
 </br>
 
-- launch velodyne </br>
+- **launch velodyne** </br>
 `$ roslaunch velodyne_pointcloud one_for_all.launch` </br>
-</br>
 If you have a frame error, you can use this command to resolve it. </br>
 `$ rosrun tf static_transform_publisher 0 0 0 0 0 0 1 velodyne 10` </br>
 </br>
 
-- launch camera(ethernet) </br>
+- **launch camera(ethernet)** </br>
 before this command, setting connection using FlyCapture2 application </br>
 `$ roslaunch pointgrey_camera_driver camera.launch` </br>
 
 </br>
 
-- launch camera(USB) </br>
+- **launch camera(USB)** </br>
 befor this command, setting connection using SpinView application </br>
 `$ cd niro-sg2-env` </br>
 `$ catkin_make` </br>
@@ -44,5 +43,5 @@ befor this command, setting connection using SpinView application </br>
 
 </br>
 
-- synchronization </br>
+- **synchronization** </br>
 `$ rosrun message_filter main.py` </br>
