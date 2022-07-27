@@ -4,7 +4,7 @@
 
 - ubuntu 18.04 </br>
 - ROS melodic </br>
-- Three Velodyne-LiDARs, Two Pointgrey-Cameras parsing & syncronization </br>
+- Three Velodyne-LiDARs, Two Pointgrey-Cameras parsing & synchronization </br>
 - FlyCapture2 Camera Selection 2.13.3.31 </br>
 - SpinView 1.27.0.48 </br>
 
@@ -24,7 +24,8 @@
 
 - launch velodyne </br>
 `$ roslaunch velodyne_pointcloud one_for_all.launch` </br>
-
+If you have a frame error, you can use this command to resolve it. </br>
+`$ rosrun tf static_transform_publisher 0 0 0 0 0 0 1 velodyne 10` </br>
 </br>
 
 - launch camera(ethernet) </br>
@@ -40,3 +41,5 @@ befor this command, setting connection using SpinView application </br>
 `$ sudo sh -c "echo 1000 > /sys/module/usbcore/parameters/usbfs_memory_mb"` </br>
 `$ roslaunch spinnaker_sdk_camera_driver acquisition.launch` </br>
 
+- synchronization </br>
+`$ rosrun message_filter main.py` </br>
