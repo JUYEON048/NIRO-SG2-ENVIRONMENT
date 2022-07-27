@@ -9,7 +9,6 @@
 - SpinView 1.27.0.48 </br>
 
 </br>
-</br>
 
 - set workspace </br>
 `$ git clone https://github.com/JUYEON048/NIRO-SG2-SETTING.git` </br>
@@ -21,7 +20,6 @@
 `$ catkin_make` </br>
 `$ source devel/setup.bash` </br>
 
-</br>
 </br>
 
 - launch velodyne </br>
