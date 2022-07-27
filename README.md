@@ -41,5 +41,7 @@ befor this command, setting connection using SpinView application </br>
 `$ sudo sh -c "echo 1000 > /sys/module/usbcore/parameters/usbfs_memory_mb"` </br>
 `$ roslaunch spinnaker_sdk_camera_driver acquisition.launch` </br>
 
+</br>
+
 - synchronization </br>
 `$ rosrun message_filter main.py` </br>
